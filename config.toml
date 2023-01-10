@@ -1,4 +1,4 @@
-baseURL = 'https://bi-rabittoh.github.io/'
+baseURL = 'https://birabittoh.github.io/'
 languageCode = 'en-us'
 title = 'BiRabittoh'
 theme = 'archie'
@@ -27,7 +27,7 @@ paginate=3 # articles per page
 [[params.social]]
 name = "GitHub"
 icon = "github"
-url = "https://github.com/Bi-Rabittoh"
+url = "https://github.com/BiRabittoh"
 
 [[params.social]]
 name = "LinkedIn"
