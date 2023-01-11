@@ -1,6 +1,7 @@
 ---
 title: "Home"
-draft: false
+type: home
+layout: index
 ---
 
 Sono nato nel 1998, programmo dal 2016 e la considero la mia passione. Apprezzo l'arte in ogni sua forma, inclusi i videogiochi, così come ogni tipo di humor. Mi piace passare il tempo su Discord programmando roba che probabilmente non finirò mai.

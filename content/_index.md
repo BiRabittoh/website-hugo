@@ -1,6 +1,6 @@
 ---
 title: "Home"
-draft: false
+type: home
 ---
 
 Italian male born in 1998; I've been programming since 2016 and I love it. I enjoy art in every form, including video-games, as well as every kind of humor. I usually hang around on Discord while programming stuff I'll probably never actually get finished.
