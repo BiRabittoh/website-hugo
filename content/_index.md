@@ -1,6 +1,5 @@
 ---
 title: "Home"
-#date: 2023-01-10T13:08:39+01:00
 draft: false
 ---
 
