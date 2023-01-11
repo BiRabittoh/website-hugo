@@ -1,7 +1,6 @@
 ---
 title: "The AI takeover is near?"
 date: 2022-09-21T21:50:41Z
-draft: false
 tags: [art,ai,machine learning]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "You should probably use Linux"
 date: 2021-04-29T00:00:00Z
-draft: false
 tags: [privacy,foss,advice]
 ---
 

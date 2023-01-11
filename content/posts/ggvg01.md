@@ -1,7 +1,6 @@
 ---
 title: "GGVG01 - Fran Bow"
 date: 2022-02-09T11:29:15Z
-draft: false
 tags: [game review]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "My opinion on FOMO"
 date: 2022-03-06T11:21:41Z
-draft: false
 tags: [advice,minimalism]
 ---
 

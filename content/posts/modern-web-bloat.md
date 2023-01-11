@@ -1,7 +1,6 @@
 ---
 title: "Modern web bloat"
 date: 2021-04-09T00:00:00Z
-draft: false
 tags: [foss,minimalism]
 ---
 
