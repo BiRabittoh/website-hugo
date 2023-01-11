@@ -1,5 +1,5 @@
 ---
-title: "Data Volatility"
+title: "Data volatility"
 date: 2022-01-14T10:31:59Z
 draft: false
 tags: [privacy,foss,advice]
