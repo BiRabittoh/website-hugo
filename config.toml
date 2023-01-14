@@ -42,16 +42,6 @@ url = "mailto:andronacomarco@gmail.com"
 # Main menu Items
 
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
 name = "Articles"
 url = "/articles"
-weight = 2
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 3
+weight = 1
