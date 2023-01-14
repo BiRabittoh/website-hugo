@@ -331,3 +331,18 @@ table td{
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
+
+/* CUSTOM CSS */
+
+.post {
+	margin:10px;
+}
+
+.tag {
+  border-bottom: none;
+}
+
+.tag:hover {
+  background-color: transparent;
+  color: #999;
+}
