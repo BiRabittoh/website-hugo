@@ -1,21 +1,26 @@
 {{ define "main" }}
 <main>
     <article>
-        <header>
+        <div class="title">
             <h1>{{.Title}}</h1>
-        </header>
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-        {{.Content}}
+        </div>
+        <section class="body">
+			{{ .Content }}
+		</section>
     </article>
-    <!--
+    <h2>Latest articles</h2>
     <ul>
-     Ranges through content/posts/*.md 
-    {{ range ( where .Site.RegularPages "Type" "posts" ) }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
+    {{ range first 3 ( where .Site.RegularPages "Type" "articles" ) }}
+    <li class="post">
+        <span class="meta">{{ dateFormat "2006-01-02" .Date }}</span>
+        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+        <span class="meta">
+            {{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}
+            {{ range (.GetTerms "tags") }}[<a href="{{ .Permalink }}" class="tag">{{ .LinkTitle }}</a>] {{ end }}
+        </span>
+    </li>
     {{ end }}
     </ul>
-    -->
+    
 </main>
 {{ end }}

@@ -1,7 +1,7 @@
 ---
 title: "GGVG01 - Fran Bow"
 date: 2022-02-09T11:29:15Z
-tags: [gaming]
+tags: [gaming, advice]
 ---
 
 ![Fran bow](/ggvg01/a.png)
