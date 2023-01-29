@@ -6,10 +6,8 @@ tags: [foss,advice]
 
 Nah, I'm not talking about [bluetooth mirrors](https://www.bathshack.com/blog/bluetooth-mirrors-everything-you-need-to-know-before-you-buy/). Mirrors are what powers all distros: they're a (de)centralized solution for downloading pre-compiled binaries and scripts for your operating system.
 
-I use [paru](https://github.com/Morganamilo/paru) to update my ArchLinux system. It's a wrapper for Pacman, so typing `paru` is perfectly equivalent to typing `sudo pacman -Syu`.
-
 ## Suspicion
-I like always having the most current version of packages, so I usually update my system several times a day. When, after a day, I ran the update and it reported the system being up to date, I was pretty weirded out.
+I like always having the most current version of packages, so I usually update my system several times a day. When, after a day, I ran `sudo pacman -Syu` and it reported the system being up to date, I was pretty weirded out.
 
 Another day passed, and the system was still up to date. It was not a connection problem, I was connecting to my mirrors and they were reporting absolutely zero updates for my system.
 
