@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ if isset .Data "Term" }}
+<h1>Entries tagged - "{{ .Data.Term }}"</h1>
+{{ else }}
+<h1 class="page-title">All articles</h1>
+{{ end }}
+<ul class="posts">
+	{{- range .Data.Pages -}}
+		{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
+		<li class="post">
+			<span class="meta">{{ dateFormat "2006-01-02" .Date }}</span>
+			<a href="{{ .RelPermalink }}">{{.Title}}</a>
+			<span class="meta">
+				{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}
+				{{ range (.GetTerms "tags") }}[<a href="{{ .Permalink }}" class="tag">{{ .LinkTitle }}</a>] {{ end }}
+			</span>
+		</li>
+		{{- end -}}
+	{{- end -}}
+</ul>
+
+<h2>All tags</h2>
+
+{{ $biggest := 1 }}
+{{ $smallest := 1 }}
+{{ $max := 3 }}
+{{ $min := 1 }}
+{{ $size := $min }}
+
+{{ $data := .Data }}
+<div class="tag-cloud">
+	<ul class="tags">
+		{{ range $key, $value := .Site.Taxonomies.tags.ByCount }}
+		{{ $size := (add (mul (div $value.Count $biggest) (sub $max $min)) $min) }}
+		{{ $size := (cond (eq $biggest $smallest) $min $size) }}
+		<li class="post"><a style="font-size: {{ $size }}rem;" href="{{ $.Site.LanguagePrefix | absURL }}{{ $data.Plural }}/tags/{{ $value.Name | urlize }}/">{{ $value.Name }}</a></li>
+		{{ end }}
+	</ul>
+</div>
+
+{{ end }}
