@@ -64,13 +64,15 @@ sudo systemctl enable reflector.timer
 
 Done!
 
-Now, by default pacman _does_ update its mirrorlist. It creates a file called `mirrorlist.pacnew` and it expects you to pick your favorite mirrors each time its generated. You can disable this (now unneeded) behavior by adding `NoExtract` under "# Misc options" in `/etc/pacman.conf`:
+Now, by default pacman _does_ update its mirrorlist. It creates a file called `mirrorlist.pacnew` and it expects you to pick your favorite mirrors each time its generated. You can disable this (now unneeded) behavior by uncommenting and setting `NoExtract` in `/etc/pacman.conf`:
 
 ```
+...
+NoExtract = /etc/pacman.d/mirrorlist.pacnew
+
 # Misc options
-NoExtract
 Color
 ILoveCandy
-CheckSpace
 ParallelDownloads = 3
+...
 ```
