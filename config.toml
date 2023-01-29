@@ -25,6 +25,11 @@ paginate=3 # articles per page
 # Social Tags
 
 [[params.social]]
+name = "RSS Feed"
+icon = "rss"
+url = "/articles/index.xml"
+
+[[params.social]]
 name = "GitHub"
 icon = "github"
 url = "https://github.com/BiRabittoh"
