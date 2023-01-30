@@ -68,7 +68,7 @@ Now, by default pacman _does_ update its mirrorlist. It creates a file called `m
 
 ```
 ...
-NoExtract = /etc/pacman.d/mirrorlist.pacnew
+NoExtract = /etc/pacman.d/mirrorlist
 
 # Misc options
 Color
