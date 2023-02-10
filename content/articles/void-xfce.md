@@ -21,7 +21,7 @@ One thing I hate about XFCE is its fixation to save sessions. A lot of times I g
 
 A quick and easy solution to disable session saving entirely is just to create an empty file in place of the `sessions` directory.
 ```
-rm ~/.cache/sessions
+rm ~/.cache/sessions -rf
 touch ~/.cache/sessions
 ```
 
