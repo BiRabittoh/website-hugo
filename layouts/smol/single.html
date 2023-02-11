@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ if not (.Draft) }}<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />{{ end }}
+<main>
+    <article>
+        <h1 class="title">Redirecting...</h1>
+        <section class="body">
+			Please click <a href="{{ .Params.redirect }}">here</a> if you are not automatically redirected.
+		</section>
+    </article>
+</main>
+{{ end }}
