@@ -1,6 +1,7 @@
 +++
-draft = false
+draft = true
+title = "Resume"
 slug = "cv"
 redirect = "https://mega.nz/file/NQ40FRIC#7LF_0OoR5yJzos51UIffOCEiovQetghXh0_cw_31Y6c"
 +++
-CONTENT NOT RENDERED
+"smol" URL shortener

@@ -1,6 +1,7 @@
 +++
 draft = false
+title = "Redirecting..."
 slug = "{{ .Name }}"
 redirect = "https://"
 +++
-CONTENT NOT RENDERED
+"smol" URL shortener
